@@ -6,6 +6,9 @@ import site
 import  requests
 from bs4 import BeautifulSoup   
 
+
+
+
 response = requests.get('https://g1.globo.com/')
 print(response.content)
 content = response.content
@@ -17,6 +20,10 @@ noticia = site.find('div', attrs={'class': '_evt'})
 
 titulo = site.find('a', attrs={'class': 'feed-post-link'})
 print(titulo.text)
+
+
+
+
 
 
 
